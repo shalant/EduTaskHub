@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: ghcr.io/${{ secrets.AzureAppService_ContainerUsername_cf57bdfc6a3348bcb3814a32f8b71f08 }}/edutaskhub:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./EduTaskHub.Frontend/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
